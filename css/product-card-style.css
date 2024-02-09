@@ -1,0 +1,141 @@
+* { 
+  /*Reset the brouser default css style in the next 3 lines*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*choose your font family*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*Set up color variables for css*/
+  --bg-PrimaryCol: #000000;
+  --bg-2ndryCol: #F2FDFF;
+  --font-color-primary: #000000;
+  --font-color-2ndry: #D3D3D3;
+  --1st-color-of-choice: #000000; 
+  --2nd-color-0f-choice: #FA003F; 
+  --3rd-color-of-choice: #F5F5DC;
+  --backup-color: #F4F482;
+}
+
+body {
+
+    height: 100vh;
+    background-color: var(--bg-PrimaryCol);
+}
+
+/*Style the parent div = product-card*/
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+  margin: 120px 0 0 300px; 
+}
+
+/*Style the child div = left-img-col*/
+.left-img-col { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+/*Style the child of left-img-col = img*/
+.left-img-col img {
+    width: 325px;
+    object-fit: cover;
+}
+
+/*Style right-info-col*/
+.right-info-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--bg-2ndryCol);
+  height: 485px;
+  width: 350px;
+}
+
+.right-info-col > h3 {
+  font-size: 32px;
+  color: var(--font-color-primary);
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+h3 + h5 {
+  font-size: 18px;
+  color: var(--font-color-2ndry);
+  margin-top: 15px;
+  text-indent: 0;
+  margin-left: 0;
+
+}
+
+h5 + p {
+  font-size: 14px;
+  color: var(--font-color-primary);
+  margin-top: 20px;
+  padding-left: 50px;
+  font-weight: 200;
+
+}
+.available-colors{
+  padding: 20px;
+}
+
+.available-colors > span {
+  font-size: 14px;
+  color: var(--font-color-primary);
+  margin-top: 20px;
+  font-weight: 200; 
+}
+
+.black-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block; 
+}
+
+.red-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+.white-color-container {
+  height: 20px;
+  width: 20px;
+  background-color: beige;
+  border-radius: 50%;
+  display: inline-block; 
+}
+
+.price {
+  margin-top: 20px;
+
+}
+
+.price > h4{
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color-primary);
+  padding-left: 0%;
+  display: inline-block;
+}
+.price button{
+  width: 150px;
+  height: 40px;
+  color: var(--bg-2ndryCol);
+  background-color: #000000;
+  display: inline-block;
+  border-radius: 30%;
+  margin-bottom: 20px;
+}
+
+
